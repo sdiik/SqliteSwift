@@ -15,18 +15,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-        navigation = window.rootViewController as? UINavigationController
-        navigation?.navigationBar.barTintColor = UIColor(named: "color_black")
-        navigation?.navigationBar.tintColor = UIColor(named: "color_black")
-        let story = UIStoryboard(name: "Sqllite", bundle: nil)
-        let navigationMain =
-            story.instantiateViewController(identifier: "SqlliteController") as SqlliteController
-        window.rootViewController = UINavigationController(rootViewController: navigationMain)
-        self.window = window
-        window.makeKeyAndVisible()
+        //MARK: - controller
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        let window = UIWindow(windowScene: windowScene)
+//        navigation = window.rootViewController as? UINavigationController
+//        navigation?.navigationBar.barTintColor = UIColor(named: "color_black")
+//        navigation?.navigationBar.tintColor = UIColor(named: "color_black")
+//        let story = UIStoryboard(name: "Sqllite", bundle: nil)
+//        let navigationMain =
+//            story.instantiateViewController(identifier: "SqlliteController") as SqlliteController
+//        window.rootViewController = UINavigationController(rootViewController: navigationMain)
+//        self.window = window
+//        window.makeKeyAndVisible()
 
+        //MARK: - SwiftUI
+        let contentView = SqliteControllerSwiftUI()
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = UIHostingController(rootView: contentView)
+            self.window = window
+            window.makeKeyAndVisible()
+        }        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
