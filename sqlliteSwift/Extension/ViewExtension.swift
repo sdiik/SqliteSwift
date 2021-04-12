@@ -11,5 +11,13 @@ import UIKit
 import SkeletonView
 
 extension UIView {
+    func hideSkeleton() {
+        self.hideSkeleton()
+        self.isHidden = true
+    }
     
+    func showSkeleton() {
+        self.isHidden = false
+        self.showSkeleton()
+    }
 }
