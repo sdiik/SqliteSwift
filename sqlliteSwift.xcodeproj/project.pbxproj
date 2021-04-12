@@ -11,6 +11,8 @@
 		8D76B29F2D23324AB035FCC8 /* Pods_sqlliteSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0514BFCAA9466CB2E8E8CFCA /* Pods_sqlliteSwiftTests.framework */; };
 		AC3F5FFE2774A0A2FE6148EF /* Pods_sqlliteSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A89A299F945B83006C60E /* Pods_sqlliteSwift.framework */; };
 		F30A0B2826232F4E00748C0F /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0B2726232F4E00748C0F /* EditUserView.swift */; };
+		F30A0B2D2623E98300748C0F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0B2C2623E98300748C0F /* StringExtension.swift */; };
+		F30A0B352623E9D200748C0F /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0B342623E9D200748C0F /* IntExtension.swift */; };
 		F3108FDE261FF4150092C2DF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3108FDD261FF4150092C2DF /* UserModel.swift */; };
 		F3108FE3261FF49D0092C2DF /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3108FE2261FF49D0092C2DF /* DB_Manager.swift */; };
 		F3108FE8261FF83D0092C2DF /* SqliteControllerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3108FE7261FF83D0092C2DF /* SqliteControllerSwiftUI.swift */; };
@@ -60,6 +62,8 @@
 		A0395A51ACE386EF681246E9 /* Pods-sqlliteSwift-sqlliteSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqlliteSwift-sqlliteSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-sqlliteSwift-sqlliteSwiftUITests/Pods-sqlliteSwift-sqlliteSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB0A89A299F945B83006C60E /* Pods_sqlliteSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sqlliteSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30A0B2726232F4E00748C0F /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
+		F30A0B2C2623E98300748C0F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F30A0B342623E9D200748C0F /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		F3108FDD261FF4150092C2DF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F3108FE2261FF49D0092C2DF /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
 		F3108FE7261FF83D0092C2DF /* SqliteControllerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteControllerSwiftUI.swift; sourceTree = "<group>"; };
@@ -255,17 +259,11 @@
 		F35E32AF2620413200C5814A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F35E32B02620413800C5814A /* View */,
+				F35E32B12620415E00C5814A /* ViewExtension.swift */,
+				F30A0B2C2623E98300748C0F /* StringExtension.swift */,
+				F30A0B342623E9D200748C0F /* IntExtension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		F35E32B02620413800C5814A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F35E32B12620415E00C5814A /* ViewExtension.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +515,8 @@
 				F3108FE3261FF49D0092C2DF /* DB_Manager.swift in Sources */,
 				F358F0D725CACABF0069C2F9 /* DBHelper.swift in Sources */,
 				F35E32B22620415E00C5814A /* ViewExtension.swift in Sources */,
+				F30A0B352623E9D200748C0F /* IntExtension.swift in Sources */,
+				F30A0B2D2623E98300748C0F /* StringExtension.swift in Sources */,
 				F358F0CF25CAC9410069C2F9 /* SqlliteController.swift in Sources */,
 				F358F09F25CAC91D0069C2F9 /* AppDelegate.swift in Sources */,
 				F358F0A125CAC91D0069C2F9 /* SceneDelegate.swift in Sources */,
