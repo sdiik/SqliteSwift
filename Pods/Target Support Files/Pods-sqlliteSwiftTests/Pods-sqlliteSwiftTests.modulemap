@@ -1,0 +1,6 @@
+framework module Pods_sqlliteSwiftTests {
+  umbrella header "Pods-sqlliteSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
